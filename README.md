@@ -43,8 +43,5 @@ For training, pass `liver_valid` to the model and both `liver_valid` and `tumor_
 
 This package is a code extract aligned to the current manuscript's architecture description. It does not include experimental data, trained checkpoints, or evidence for the manuscript's reported performance.
 
-## Verification and provenance
-
-The supplied full-code archive set `base_channels=36` in its configuration but `24` as the model class default. This extract uses `36` by default, matching the manuscript's five encoder widths and approximately 46.4 million parameters. The archive also lacked the manuscript's stop-gradient rule for cases without curated liver masks; this extract implements that rule through the required training-time `liver_valid` argument. Thus, this is a manuscript-aligned core implementation, not a byte-for-byte copy of an archived training run.
 
 Synthetic-tensor checks covered a full-width forward pass, missing-phase invariance, phase-dropout retention, mixed-validity gradients, partial-label loss masking, and CPU automatic mixed precision. They do not establish the manuscript's measured performance or GPU memory and runtime figures.
