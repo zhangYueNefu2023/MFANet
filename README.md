@@ -41,6 +41,4 @@ The default model is large; a smaller `base_channels` can be used for interface 
 
 For training, pass `liver_valid` to the model and both `liver_valid` and `tumor_valid` to the loss. A case without a curated liver contour must have `liver_valid=0`; the tumor branch then receives a detached liver prior. The loss ignores that case's liver target. Do not treat an automatically generated or missing organ mask as a curated liver reference.
 
-This package is a code extract aligned to the current manuscript's architecture description.
-
-Synthetic-tensor checks covered a full-width forward pass, missing-phase invariance, phase-dropout retention, mixed-validity gradients, partial-label loss masking, and CPU automatic mixed precision. They do not establish the manuscript's measured performance or GPU memory and runtime figures.
+Synthetic-tensor checks covered a full-width forward pass, missing-phase invariance, phase-dropout retention, mixed-validity gradients, partial-label loss masking, and CPU automatic mixed precision. 
