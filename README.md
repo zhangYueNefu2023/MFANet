@@ -1,6 +1,6 @@
 # MFANet core modules
 
-This is the model-only PyTorch implementation of the MFANet architecture described in the revised manuscript. It contains the phase fusion, spatial/spectral/axial encoder, liver and tumor decoders, soft anatomical support, boundary head, and partial-label objective. It contains no dataset loader, image registration, training loop, metric calculation, plotting, or pretrained weights.
+This is the model-only PyTorch implementation of the MFANet architecture described in the revised manuscript. It contains the phase fusion, spatial/spectral/axial encoder, liver and tumor decoders, soft anatomical support, boundary head, and partial-label objective.
 
 ## Files
 
